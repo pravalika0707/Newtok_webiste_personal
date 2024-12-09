@@ -1,0 +1,122 @@
+.internet {
+  padding: 30px; /* Reduce padding for smaller screens */
+}
+
+.internet-details h1 {
+  font-weight: bold;
+  padding-top: 0;
+}
+
+.internet-details p {
+  font-size: 1rem; /* Adjust font size for better readability */
+}
+
+.internet-details {
+  text-align: center;
+  justify-content: center; /* Align content centrally on smaller screens */
+  background-color: #4695ea29;
+  padding: 50px 20px; /* Reduce padding */
+  border-radius: 20px; /* Smaller border radius for compact design */
+  font-size: 1.2rem; /* Adjust font size */
+}
+
+.package-cards {
+  flex-direction: column; /* Stack cards vertically */
+  padding: 20px; /* Reduce padding */
+}
+
+.package-card {
+  padding: 20px;
+  margin: 10px 0; /* Add vertical spacing between cards */
+  width: 90%; /* Make cards span most of the screen */
+  max-width: 400px; /* Prevent cards from being too wide */
+  background-color: #6493c429;
+  border-radius: 20px; /* Smaller radius for consistency */
+}
+
+.nav-buttons {
+  position: fixed; /* Keep buttons fixed at the bottom */
+  bottom: 10px; /* Adjust for smaller screens */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px; /* Reduce gap between buttons */
+  flex-wrap: wrap; /* Wrap buttons if needed */
+}
+
+.nav-buttons a {
+  padding: 8px 16px; /* Smaller padding for buttons */
+  background-color: #a0c8f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size for buttons */
+}
+
+.nav-buttons a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .internet {
+    padding: 20px; /* Further reduce padding for mid-sized screens */
+  }
+
+  .internet-details {
+    padding: 40px 15px; /* Reduce padding */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .package-cards {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+
+  .package-card {
+    width: 100%; /* Full width for cards */
+    margin: 10px 0; /* Vertical spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .internet {
+    padding: 15px; /* Compact padding */
+  }
+
+  .internet-details {
+    padding: 20px 10px;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .package-cards {
+    padding: 10px; /* Compact padding */
+  }
+
+  .package-card {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    font-size: 1rem; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    bottom: 10px;
+    gap: 5px; /* Smaller gap */
+  }
+
+  .nav-buttons a {
+    font-size: 12px; /* Smaller font size for buttons */
+    padding: 6px 12px; /* Compact button padding */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+}

@@ -1,0 +1,220 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  flex-direction: column;
+}
+
+.dumm1 {
+  text-align: center;
+  line-height: 1.8;
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  width: 100%;
+}
+
+.dumm1 h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 0;
+  color: white;
+}
+
+.dumm1 p {
+  color: rgb(14, 7, 7);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-details {
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgba(104, 129, 134, 0.7);
+  border-radius: 10px;
+  border-color: rgb(229, 148, 26);
+}
+
+.sra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; 
+}
+
+.sra img {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+.package-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.package-card1,
+.package-card {
+  background-color: rgba(106, 159, 199, 0.322);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 300px;
+}
+
+.package-card h4 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: lightyellow;
+}
+
+.package-card p {
+  color: white;
+  text-align: center;
+}
+
+/* Updated nav-buttons styling */
+.nav-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  background-color: transparent; /* Removed any default background */
+  border: none; /* Removed border */
+  color: #0056b3; /* Text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3; /* Hover background */
+  color: white; /* Hover text color */
+}
+
+.nav-buttons a {
+  padding: 10px 20px;
+  background-color: #a0c8f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none; /* Ensure no border */
+}
+
+.nav-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dumm1 {
+    font-size: 1.5rem;
+  }
+
+  .dumm1 h1 {
+    font-size: 2rem;
+  }
+
+  .dumm1 p {
+    font-size: 1rem;
+  }
+
+  .sra img {
+    width: 200px;
+    height: 120px;
+  }
+
+  .package-card1,
+  .package-card {
+    width: 90%; 
+    font-size: 1.2rem;
+  }
+
+  .package-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .nav-buttons button,
+  .nav-buttons a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dumm1 {
+    font-size: 1.2rem;
+  }
+
+  .dumm1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .dumm1 p {
+    font-size: 0.9rem;
+  }
+
+  .sra img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .package-card1,
+  .package-card {
+    width: 70%; 
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .package-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .nav-buttons button,
+  .nav-buttons a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .package-cards {
+    justify-content: space-between;
+  }
+
+  .sra img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .nav-buttons button {
+    margin-left: 30px;
+  }
+}

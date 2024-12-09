@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+  background-color: rgb(97, 90, 163);
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em; /* Desktop size */
+}
+
+header p {
+  font-size: 1.2em; /* Desktop size */
+}
+
+/* Navigation Menu */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2b2c2f;
+  padding: 10px 0;
+  flex-wrap: wrap; /* Allow wrap in mobile view */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em; /* Desktop size */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Service Cards */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.service-card h4 {
+  margin-top: 15px;
+  color: #0066cc;
+}
+
+.service-card p {
+  font-size: 1.1em; /* Desktop size */
+  color: #555;
+}
+.section h2{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section p{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 h2,p{
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.3em; /* Adjusted for mobile */
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 1em;
+    /* margin-bottom: 10px; */
+  }
+  nav{
+    margin-top:50px;
+  }
+
+  nav a {
+    font-size: 1em; /* Adjusted for mobile */
+    
+  }
+  .section h2{
+    margin-top: 140px;
+    margin-left: 25px;
+    font-size: 1.2 rem;
+  }
+  .section p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .service-card h4 {
+    font-size: 1.2em; /* Adjusted for mobile */
+  }
+
+  .service-card p {
+    font-size: 0.9em; /* Adjusted for mobile */
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .nav-menu {
+    display: flex; /* Hidden in mobile */
+    flex-direction: column;
+    background-color: #2b2c2f;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 10;
+  }
+  .nav-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .nav-buttons:hover{
+    background-color: #0056b3;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .hamburger {
+    display: none; /* No need for hamburger button on desktop */
+  }
+}

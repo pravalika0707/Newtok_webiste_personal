@@ -1,0 +1,136 @@
+/* General Styles (applies to all screen sizes) */
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.daddy {
+  font-size: xx-large;
+  width: 20%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+.mon1 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+address {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.nav-buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons a {
+  padding: 10px 20px;
+  background-color: #a0c8f3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.nav-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .daddy {
+    width: 50%; /* Make image take half the screen width */
+    font-size: large;
+    margin-bottom: 10px;
+  }
+
+  .mon1 {
+    font-size: large;
+    padding: 10px;
+  }
+
+  address {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-buttons a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .daddy {
+    width: 60%; /* Increase width to fit content better */
+    margin-bottom: 20px;
+  }
+
+  .mon1 {
+    font-size: medium;
+    padding: 5px;
+  }
+
+  address {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .nav-buttons {
+    gap: 5px;
+  }
+
+  .nav-buttons a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* For desktops and large screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .contact {
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-around;
+  }
+
+  .daddy {
+    width: 15%; /* Keep image smaller for large screens */
+    font-size: larger;
+  }
+
+  .mon1 {
+    font-size: x-large;
+  }
+
+  address {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+}
